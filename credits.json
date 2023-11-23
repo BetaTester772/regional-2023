@@ -1,0 +1,53 @@
+[
+  {
+    "sectionTitle": "크레딧 섹션 1",
+    "members": [
+      {
+        "name": "권동한 | Ryan Donghan Kwon",
+        "position": "Director",
+        "description": "소개 1",
+        "imageUrl": "./assets/credit_profile/ryan.png"
+      },
+      {
+        "name": "안호성 | Hoseong Ahn",
+        "position": "포지션 2",
+        "description": "소개 2",
+        "imageUrl": "./assets/credit_profile/hoseong.jpg"
+      }
+    ]
+  },
+  {
+    "sectionTitle": "크레딧 섹션 2",
+    "members": [
+      {
+        "name": "이름 3",
+        "position": "포지션 3",
+        "description": "소개 3",
+        "imageUrl": "프로필 이미지 URL 3"
+      },
+      {
+        "name": "이름 4",
+        "position": "포지션 4",
+        "description": "소개 4",
+        "imageUrl": "프로필 이미지 URL 4"
+      }
+    ]
+  },
+  {
+    "sectionTitle": "크레딧 섹션 3",
+    "members": [
+      {
+        "name": "이름 5",
+        "position": "포지션 5",
+        "description": "소개 5",
+        "imageUrl": "프로필 이미지 URL 5"
+      },
+      {
+        "name": "이름 6",
+        "position": "포지션 6",
+        "description": "소개 6",
+        "imageUrl": "프로필 이미지 URL 6"
+      }
+    ]
+  }
+]
