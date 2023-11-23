@@ -1,0 +1,12 @@
+[
+  {
+    "title": "프로젝트 제목 1",
+    "description": "프로젝트 설명 1",
+    "imageUrl": "https://via.placeholder.com/400x300"
+  },
+  {
+    "title": "프로젝트 제목 2",
+    "description": "프로젝트 설명 2",
+    "imageUrl": "https://via.placeholder.com/400x300"
+  }
+]
