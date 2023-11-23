@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 - 하나고등학교 지역연계프로젝트</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SUITE', sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff; /* White 배경색 */
+            position: fixed;
+            top: 10px; /* 상단 여백 조정 */
+            left: 10px; /* 좌측 여백 조정 */
+            right: 10px; /* 우측 여백 조정 */
+            border-radius: 20px; /* 테두리 둥글게 만들기 */
+            z-index: 20;
+        }
+
+        .navbar img {
+            width: 100px; /* 로고 이미지 너비 조정 */
+            height: auto; /* 로고 이미지 높이 자동 조정 */
+        }
+
+        .navbar a {
+            color: #555555; /* Hana Gray 텍스트 컬러 */
+        }
+
+        .content {
+            margin-top: 100px; /* 네비게이션 바 높이만큼 여백 추가 */
+        }
+
+        /* 프로젝트 갤러리 스타일 */
+        .project-gallery {
+            margin-top: 80px; /* 네비게이션 바와의 여백 추가 */
+        }
+
+        .project-card {
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<!-- 네비게이션 바 -->
+<nav class="navbar p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="./">
+            <img src="./assets/has_logo.svg" alt="하나고등학교 로고">
+        </a>
+        <div class="space-x-4">
+            <a href="./" class="hover:text-gray-200">홈</a>
+            <a href="./project.html" class="hover:text-gray-200">융합탐구팀</a>
+            <a href="./research.html" class="hover:text-gray-200">연구논문팀</a>
+            <a href="./credit.html" class="hover:text-gray-200">만든 사람들</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 프로젝트 갤러리 -->
+<div class="container mx-auto p-4 project-gallery">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- 프로젝트 카드 -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x300" alt="프로젝트 이미지">
+            <div class="p-4">
+                <h2 class="text-lg font-semibold">프로젝트 제목</h2>
+                <p class="text-gray-600">프로젝트 설명 또는 디스크립션...</p>
+            </div>
+        </div>
+
+        <!-- 데모 프로젝트 카드 (예시) -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x300" alt="프로젝트 이미지">
+            <div class="p-4">
+                <h2 class="text-lg font-semibold">데모 프로젝트</h2>
+                <p class="text-gray-600">이것은 데모 프로젝트입니다. 예시 설명입니다.</p>
+            </div>
+        </div>
+
+        <!-- 데모 프로젝트 카드 (예시) -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x300" alt="프로젝트 이미지">
+            <div class="p-4">
+                <h2 class="text-lg font-semibold">데모 프로젝트</h2>
+                <p class="text-gray-600">이것은 데모 프로젝트입니다. 예시 설명입니다.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

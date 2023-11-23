@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만든 사람들 - 하나고등학교 지역연계프로젝트</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SUITE', sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff; /* White 배경색 */
+            position: fixed;
+            top: 10px; /* 상단 여백 조정 */
+            left: 10px; /* 좌측 여백 조정 */
+            right: 10px; /* 우측 여백 조정 */
+            border-radius: 20px; /* 테두리 둥글게 만들기 */
+            z-index: 20;
+        }
+
+        .navbar img {
+            width: 100px; /* 로고 이미지 너비 조정 */
+            height: auto; /* 로고 이미지 높이 자동 조정 */
+        }
+
+        .navbar a {
+            color: #555555; /* Hana Gray 텍스트 컬러 */
+        }
+
+        .content {
+            margin-top: 100px; /* 네비게이션 바 높이만큼 여백 추가 */
+        }
+
+        /* 크레딧 섹션 스타일 */
+        .credit-section {
+            margin-top: 80px; /* 네비게이션 바와의 여백 추가 */
+            text-align: center; /* 섹션 내용 중앙 정렬 */
+        }
+
+        /* 인원 컨테이너 스타일 */
+        .credit-container {
+            display: flex; /* 가로 방향으로 나열 */
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            max-width: 300px; /* 컨테이너 최대 너비 지정 */
+        }
+
+        .credit-item img {
+            width: 80px; /* 프로필 이미지 너비 조정 */
+            height: 80px; /* 프로필 이미지 높이 조정 */
+            border-radius: 50%; /* 프로필 이미지를 원 모양으로 만들기 */
+            margin-right: 20px; /* 이미지와 텍스트 사이 여백 조정 */
+        }
+
+        .credit-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .credit-item p {
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<!-- 네비게이션 바 -->
+<nav class="navbar p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="./">
+            <img src="./assets/has_logo.svg" alt="하나고등학교 로고">
+        </a>
+        <div class="space-x-4">
+            <a href="./" class="hover:text-gray-200">홈</a>
+            <a href="./project.html" class="hover:text-gray-200">융합탐구팀</a>
+            <a href="./research.html" class="hover:text-gray-200">연구논문팀</a>
+            <a href="./credit.html" class="hover:text-gray-200">만든 사람들</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 크레딧 섹션 1 -->
+<div class="container mx-auto p-4 credit-section">
+    <h2 class="text-2xl font-semibold mb-4">크레딧 섹션 1</h2>
+    <!-- 인원 컨테이너 1 -->
+    <div class="credit-container">
+        <div class="credit-item">
+            <img src="./assets/credit_profile/ryan.png" alt="프로필 이미지">
+            <div>
+                <h3>권동한 | Ryan Donghan Kwon</h3>
+                <p>Director</p>
+                <p>소개 1</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 인원 컨테이너 2 -->
+    <div class="credit-container">
+        <div class="credit-item">
+            <img src="프로필 이미지 URL" alt="프로필 이미지">
+            <div>
+                <h3>이름 2</h3>
+                <p>포지션 2</p>
+                <p>소개 2</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 추가 인원 컨테이너를 원하는 만큼 추가할 수 있습니다. -->
+</div>
+
+<!-- 크레딧 섹션 2 -->
+<div class="container mx-auto p-4 credit-section">
+    <h2 class="text-2xl font-semibold mb-4">크레딧 섹션 2</h2>
+    <!-- 섹션 1과 같은 방식으로 인원 컨테이너를 추가할 수 있습니다. -->
+</div>
+
+<!-- 크레딧 섹션 3 -->
+<div class="container mx-auto p-4 credit-section">
+    <h2 class="text-2xl font-semibold mb-4">크레딧 섹션 3</h2>
+    <!-- 섹션 1과 같은 방식으로 인원 컨테이너를 추가할 수 있습니다. -->
+</div>
+
+</body>
+</html>
