@@ -46,3 +46,8 @@ body.dark .navbar {
 body.dark .navbar a {
     color: #ffffff; /* 흰색 텍스트 컬러 */
 }
+
+.dark-mode-icon {
+    fill: #808080; /* 아이콘 색상을 현재 텍스트 색상으로 설정 */
+    font-size: calc(1.2vmin + 7px); /* Change the value to your desired size */
+}
