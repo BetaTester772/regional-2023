@@ -17,6 +17,11 @@
     height: auto; /* 로고 이미지 높이 자동 조정 */
 }
 
+.dark-mode-icon {
+    fill: #555555; /* 아이콘 색상을 현재 텍스트 색상으로 설정 */
+    font-size: calc(1.2vmin + 7px); /* Change the value to your desired size */
+}
+
 .navbar a {
     color: #555555; /* Hana Gray 텍스트 컬러 */
     margin: 0 10px; /* 링크 사이 여백 추가 */
@@ -39,7 +44,7 @@
 }
 
 body.dark .navbar {
-    background-color: #000000; /* 검은색 배경색 */
+    background-color: #303030; /* 검은색 배경색 */
     color: #ffffff; /* 흰색 텍스트 컬러 */
 }
 
@@ -47,7 +52,6 @@ body.dark .navbar a {
     color: #ffffff; /* 흰색 텍스트 컬러 */
 }
 
-.dark-mode-icon {
-    fill: #808080; /* 아이콘 색상을 현재 텍스트 색상으로 설정 */
-    font-size: calc(1.2vmin + 7px); /* Change the value to your desired size */
+body.dark .dark-mode-icon {
+    fill: #ffffff; /* 흰색 아이콘 색상 */
 }
