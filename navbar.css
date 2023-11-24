@@ -33,5 +33,7 @@
     .navbar a {
         margin: 5px 0; /* 링크 사이 여백 추가 및 상하 여백 간격 줄임 */
         white-space: nowrap;
+        text-decoration: none; /* 링크 밑줄 제거 */
+        font-size: calc(1.2vmin + 9px);
     }
 }
