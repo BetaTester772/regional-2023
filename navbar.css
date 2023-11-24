@@ -21,7 +21,7 @@
     color: #555555; /* Hana Gray 텍스트 컬러 */
     margin: 0 10px; /* 링크 사이 여백 추가 */
     text-decoration: none; /* 링크 밑줄 제거 */
-    font-size: calc(2vmin + 1.2px);
+    font-size: calc(1.2vmin + 7px);
 }
 
 @media (max-width: 640px) {
