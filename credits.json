@@ -11,7 +11,7 @@
       {
         "name": "안호성 | Hoseong Ahn",
         "position": "포지션 2",
-        "description": "소개 2",
+        "description": "소개 2\n줄바꿈",
         "imageUrl": "./assets/credit_profile/hoseong.jpg"
       }
     ]

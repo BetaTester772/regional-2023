@@ -101,7 +101,7 @@
 
                     section.members.forEach(member => {
                         const memberDiv = document.createElement('div');
-                        const descriptionWithBreaks = project.description.replace(/\n/g, '<br>'); // Replace newline characters with <br>
+                        const descriptionWithBreaks = member.description.replace(/\n/g, '<br>'); // Replace newline characters with <br>
                         memberDiv.className = 'credit-container';
                         memberDiv.innerHTML = `
                         <div class="credit-item">
