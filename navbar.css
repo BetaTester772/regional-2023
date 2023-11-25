@@ -20,6 +20,9 @@
 .dark-mode-icon {
     fill: #555555; /* 아이콘 색상을 현재 텍스트 색상으로 설정 */
     font-size: calc(1.2vmin + 7px); /* Change the value to your desired size */
+    background-color: #e0e0e0; /* Light gray background */
+    padding: 5px; /* Add padding around the icon */
+    border-radius: 5px; /* Optional: round the corners of the background */
 }
 
 .navbar a {
@@ -54,4 +57,5 @@ body.dark .navbar a {
 
 body.dark .dark-mode-icon {
     fill: #ffffff; /* 흰색 아이콘 색상 */
+    background-color: #555555;
 }
