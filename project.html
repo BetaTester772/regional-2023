@@ -31,12 +31,21 @@
         .project-card {
             border: 1px solid #e2e2e2;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Space between cards */
+            overflow: hidden; /* Hide anything that goes outside the card boundaries */
+            display: block; /* Stack children elements vertically */
         }
 
         .project-card img {
-            max-width: 100%;
-            height: auto;
+            display: block; /* Remove any inline behavior */
+            width: 100%; /* Make image responsive to the container's width */
+            object-fit: cover; /* Cover the area, cropping the image if necessary */
+        }
+
+        /* Style for the text content container */
+        .project-card .content {
+            padding: 16px; /* Add some padding around the text */
+            text-align: left; /* Align text to the left */
         }
     </style>
 </head>
