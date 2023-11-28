@@ -38,9 +38,10 @@
             border: 1px solid #e2e2e2;
             border-radius: 8px;
             max-width: 300px; /* 컨테이너 최대 너비 지정 */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Example shadow */
         }
 
-        .credit-item img {
+        .profile-img {
             width: 80px; /* 프로필 이미지 너비 조정 */
             height: 80px; /* 프로필 이미지 높이 조정 */
             border-radius: 50%; /* 프로필 이미지를 원 모양으로 만들기 */
@@ -61,6 +62,30 @@
         body.dark .credit-item p {
             font-size: 14px;
             color: #9ca3af;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Aligns items vertically in the center */
+            gap: 10px; /* Optional: Adds space between badges */
+        }
+
+        .github-badge-container {
+            display: flex;
+            justify-content: center; /* Horizontally centers the content */
+        }
+
+        body.dark .badge-container img {
+            border: 2px solid white;
+        }
+
+        body.dark .github-badge-container img{
+            border: 2px solid white;
+        }
+
+        body.dark img{
+            filter: brightness(80%);
         }
     </style>
 </head>
@@ -87,42 +112,45 @@
     </div>
 </nav>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        fetch('credits.json')
-            .then(response => response.json())
-            .then(sections => {
-                const container = document.querySelector('body');
+<!-- 크레딧 섹션 1 -->
+<div class="container mx-auto p-4 credit-section">
+    <h2 class="text-2xl font-semibold mb-4">크레딧 섹션 1</h2>
+    <!-- 인원 컨테이너 1 -->
+    <div class="credit-container">
+        <div class="credit-item">
+            <img class="profile-img" src="./assets/credit_profile/ryan.png" alt="프로필 이미지">
+            <div>
+                <h3>권동한 | Ryan Donghan Kwon</h3>
+                <p>Director</p>
+                <p>소개 1</p>
+            </div>
+        </div>
+    </div>
 
-                sections.forEach(section => {
-                    const sectionDiv = document.createElement('div');
-                    sectionDiv.className = 'container mx-auto p-4 credit-section';
-                    sectionDiv.innerHTML = `<h2 class="text-2xl font-semibold mb-4">${section.sectionTitle}</h2>`;
+    <!-- 인원 컨테이너 2 -->
+    <div class="credit-container">
+        <div class="credit-item">
+            <img class="profile-img" src="./assets/credit_profile/hoseong.jpg" alt="프로필 이미지">
+            <h3>안호성 | Hoseong Ahn</h3>
+            <div class="github-badge-container">
+                <a href="https://github.com/BetaTester772" target="_blank">
+                    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+                         alt="GitHub">
+                </a>
+            </div>
+            <p>Front-end web developer</p>
+            <p>웹사이트 디자인 및 프로그래밍을 담당했습니다.</p>
+            <div class="badge-container">
+                <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                     alt="HTML5">
+                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                     alt="JavaScript">
+            </div>
+        </div>
+    </div>
 
-                    section.members.forEach(member => {
-                        const memberDiv = document.createElement('div');
-                        const descriptionWithBreaks = member.description.replace(/\n/g, '<br>'); // Replace newline characters with <br>
-                        memberDiv.className = 'credit-container';
-                        memberDiv.innerHTML = `
-                        <div class="credit-item">
-                            <img src="${member.imageUrl}" alt="프로필 이미지">
-                            <div>
-                                <h3>${member.name}</h3>
-                                <p>${member.position}</p>
-                                <p>${descriptionWithBreaks}</p>
-                            </div>
-                        </div>
-                    `;
-                        sectionDiv.appendChild(memberDiv);
-                    });
-
-                    container.appendChild(sectionDiv);
-                });
-            })
-            .catch(error => console.log('Error loading credits:', error));
-    });
-
-</script>
+    <!-- 추가 인원 컨테이너를 원하는 만큼 추가할 수 있습니다. -->
+</div>
 
 </body>
 </html>
