@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to check and update dark mode status
     function updateDarkModeStatus() {
         // Get the current dark mode status from local storage
-        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const isDarkMode = localStorage.getItem('darkMode') === 'true' || (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
         // Apply the current dark mode status to the page
         if (isDarkMode) {
