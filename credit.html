@@ -38,6 +38,7 @@
             border: 1px solid #e2e2e2;
             border-radius: 8px;
             max-width: 300px; /* 컨테이너 최대 너비 지정 */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Example shadow */
         }
 
         .profile-img {
@@ -73,6 +74,18 @@
         .github-badge-container {
             display: flex;
             justify-content: center; /* Horizontally centers the content */
+        }
+
+        body.dark .badge-container img {
+            border: 2px solid white;
+        }
+
+        body.dark .github-badge-container img{
+            border: 2px solid white;
+        }
+
+        body.dark img{
+            filter: brightness(80%);
         }
     </style>
 </head>
