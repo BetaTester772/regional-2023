@@ -27,17 +27,22 @@
         .credit-section {
             margin-top: 80px; /* 네비게이션 바와의 여백 추가 */
             text-align: center; /* 섹션 내용 중앙 정렬 */
+            display: flex; /* Flexbox 사용 */
+            justify-content: center; /* 가로 방향 중앙 정렬 */
+            flex-direction: column; /* 자식 요소를 세로 방향으로 정렬 */
         }
 
         /* 인원 컨테이너 스타일 */
         .credit-container {
+            align-self: center;
             display: flex; /* 가로 방향으로 나열 */
             align-items: center;
+            justify-content: center;
             margin: 20px;
             padding: 20px;
             border: 1px solid #e2e2e2;
             border-radius: 8px;
-            max-width: 300px; /* 컨테이너 최대 너비 지정 */
+            width: 500px; /* 컨테이너 너비 지정 */
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Example shadow */
         }
 
@@ -45,13 +50,27 @@
             width: 80px; /* 프로필 이미지 너비 조정 */
             height: 80px; /* 프로필 이미지 높이 조정 */
             border-radius: 50%; /* 프로필 이미지를 원 모양으로 만들기 */
-            margin-right: 20px; /* 이미지와 텍스트 사이 여백 조정 */
+        }
+
+        .credit-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .credit-item h3 {
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 5px;
+        }
+
+        .credit-item h5 {
+            font-size: 16px;
+            margin: 5px;
+            color: #303030;
+        }
+
+        body.dark .credit-item h5 {
+            color: #f0f0f0;
         }
 
         .credit-item p {
@@ -60,7 +79,6 @@
         }
 
         body.dark .credit-item p {
-            font-size: 14px;
             color: #9ca3af;
         }
 
@@ -140,11 +158,9 @@
     <div class="credit-container">
         <div class="credit-item">
             <img class="profile-img" src="./assets/credit_profile/ryan.png" alt="프로필 이미지">
-            <div>
-                <h3>권동한 | Ryan Donghan Kwon</h3>
-                <p>Director</p>
-                <p>소개 1</p>
-            </div>
+            <h3>권동한 | Ryan Donghan Kwon</h3>
+            <h5>Director</h5>
+            <p>소개 1</p>
         </div>
     </div>
 
@@ -159,17 +175,29 @@
                          alt="GitHub">
                 </a>
             </div>
-            <p>Front-end web developer</p>
+            <h5>Front-end web developer</h5>
             <p>웹사이트 디자인 및 프로그래밍을 담당했습니다.</p>
             <div class="badge-container" style="margin-bottom: 2px;">
                 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
                      alt="HTML5">
                 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
                      alt="CSS3">
-            </div>
-            <div class="badge-container">
                 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
                      alt="JavaScript">
+            </div>
+        </div>
+    </div>
+
+    <!-- 인원 컨테이너 3 -->
+    <div class="credit-container">
+        <div class="credit-item">
+            <img class="profile-img" src="./assets/credit_profile/jinseo.png" alt="프로필 이미지">
+            <h3>박진서 | Jinseo Park</h3>
+            <h5>Logo designer</h5>
+            <p>2023 하나고등학교 지역연계 프로젝트의<br>로고를 디자인했습니다.</p>
+            <div class="badge-container">
+                <img src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white"
+                     alt="Adobe Illustrator">
             </div>
         </div>
     </div>
