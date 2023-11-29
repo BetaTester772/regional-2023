@@ -52,6 +52,17 @@
             padding: 16px; /* Add some padding around the text */
             text-align: left; /* Align text to the left */
         }
+
+        /* Add a transition for smooth alignment change */
+        .project-card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Highlight the container when hovered to emphasize the change */
+        .project-card:hover {
+            transform: scale(1.05);
+            border: 2px solid #00C49A; /* Change border color to something noticeable */
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -59,7 +70,7 @@
 <nav class="navbar p-4 text-white">
     <div class="container mx-auto flex justify-between items-center">
         <a href="./">
-            <img src="./assets/has_logo.svg" alt="하나고등학교 로고">
+            <img class="main-logo" src="./assets/regional-2023-logo_black.svg" alt="하나고등학교 로고">
         </a>
         <div class="space-x-2">
             <a href="./" class="hover:text-gray-200">홈</a>
