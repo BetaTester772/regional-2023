@@ -4,63 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>만든 사람들 - 하나고등학교 지역연계프로젝트</title>
+    <!-- 외부 스타일시트 및 폰트 링크 -->
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- 다크 모드 스크립트 -->
     <script src="dark-mode.js"></script>
+    <!-- 인라인 스타일 -->
     <style>
         body {
             font-family: 'SUITE', sans-serif;
         }
 
         body.dark {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #000000; /* 다크 모드 배경색 */
+            color: #ffffff; /* 다크 모드 텍스트 색상 */
         }
 
         .content {
-            margin-top: 100px; /* 네비게이션 바 높이만큼 여백 추가 */
+            margin-top: 100px; /* 네비게이션 바 높이만큼 상단 여백 추가 */
         }
 
-        /* 크레딧 섹션 스타일 */
         .credit-section {
-            margin-top: 80px; /* 네비게이션 바와의 여백 추가 */
-            text-align: center; /* 섹션 내용 중앙 정렬 */
-            display: flex; /* Flexbox 사용 */
-            justify-content: center; /* 가로 방향 중앙 정렬 */
-            flex-direction: column; /* 자식 요소를 세로 방향으로 정렬 */
+            margin-top: 80px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
 
-        /* 인원 컨테이너 스타일 */
         .credit-container {
             align-self: center;
-            display: flex; /* 가로 방향으로 나열 */
+            display: flex;
             align-items: center;
             justify-content: center;
             margin: 20px;
             padding: 20px;
             border: 1px solid #e2e2e2;
             border-radius: 8px;
-            width: 450px; /* 컨테이너 너비 지정 */
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Example shadow */
-        }
-
-        /* Add a transition for smooth alignment change */
-        .credit-container {
+            width: 450px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease-in-out;
         }
 
-        /* Highlight the container when hovered to emphasize the change */
         .credit-container:hover {
             transform: scale(1.05);
-            border: 2px solid #00C49A; /* Change border color to something noticeable */
+            border: 2px solid #00C49A;
         }
 
         .profile-img {
-            width: 80px; /* 프로필 이미지 너비 조정 */
-            height: 80px; /* 프로필 이미지 높이 조정 */
-            border-radius: 50%; /* 프로필 이미지를 원 모양으로 만들기 */
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
         }
 
         .credit-item {
@@ -96,8 +92,8 @@
         .badge-container {
             display: flex;
             flex-direction: row;
-            align-items: center; /* Aligns items vertically in the center */
-            gap: 2px; /* Optional: Adds space between badges */
+            align-items: center;
+            gap: 2px;
         }
 
         .badge-container img {
@@ -106,28 +102,21 @@
 
         .github-badge-container {
             display: flex;
-            justify-content: center; /* Horizontally centers the content */
-        }
-
-        .github-badge-container img {
-            border: 2px solid #f3f4f6;
+            justify-content: center;
         }
 
         .github-badge-container img:hover {
-            opacity: 0.8; /* Slightly lowers opacity on hover */
+            opacity: 0.8;
             border: 2px solid #333;
-            box-shadow: 0 0 10px #333; /* Adds a shadow for a 3D lifting effect */
-            cursor: pointer; /* Changes cursor to indicate clickable item */
+            box-shadow: 0 0 10px #333;
+            cursor: pointer;
         }
 
         body.dark .github-badge-container img:hover {
-            box-shadow: 0 0 15px #fff; /* Brighter shadow for visibility on dark backgrounds */
+            box-shadow: 0 0 15px #fff;
         }
 
-        body.dark .badge-container img {
-            border: 2px solid white;
-        }
-
+        body.dark .badge-container img,
         body.dark .github-badge-container img {
             border: 2px solid white;
         }
@@ -138,15 +127,13 @@
 
         @media (max-width: 600px) {
             .credit-container {
-                width: 300px; /* or any other suitable size */
-                /* You can also adjust other properties like padding, margin, etc., as needed */
+                width: 300px;
             }
 
             .badge-container {
-                display: flex;
-                flex-direction: column; /* This stacks the items vertically */
-                align-items: center; /* Aligns items horizontally in the center */
-                gap: 2px; /* Adds space between badges */
+                flex-direction: column;
+                align-items: center;
+                gap: 2px;
             }
         }
     </style>
@@ -227,6 +214,5 @@
 
     <!-- 추가 인원 컨테이너를 원하는 만큼 추가할 수 있습니다. -->
 </div>
-
 </body>
 </html>

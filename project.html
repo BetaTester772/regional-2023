@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>프로젝트 - 하나고등학교 지역연계프로젝트</title>
+    <!-- 외부 스타일 시트 및 폰트 링크 -->
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- 다크 모드 스크립트 -->
     <script src="dark-mode.js"></script>
+    <!-- 인라인 스타일 -->
     <style>
         body {
             font-family: 'SUITE', sans-serif;
         }
 
         body.dark {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #000000; /* 다크 모드 배경색 */
+            color: #ffffff; /* 다크 모드 텍스트 색상 */
         }
 
         .content {
@@ -28,40 +31,37 @@
             margin-top: 80px; /* 네비게이션 바와의 여백 추가 */
         }
 
+        /* 프로젝트 카드 스타일 */
         .project-card {
             border: 1px solid #e2e2e2;
             border-radius: 8px;
-            margin-bottom: 20px; /* Space between cards */
-            overflow: hidden; /* Hide anything that goes outside the card boundaries */
-            display: block; /* Stack children elements vertically */
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Example shadow */
+            margin-bottom: 20px; /* 카드 간 여백 추가 */
+            overflow: hidden; /* 카드 경계 밖 요소 숨김 */
+            display: block; /* 자식 요소를 세로로 배치 */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+            transition: transform 0.3s ease-in-out; /* 부드러운 변형 효과 추가 */
         }
 
         .project-card img {
-            display: block; /* Remove any inline behavior */
-            width: 100%; /* Make image responsive to the container's width */
-            object-fit: cover; /* Cover the area, cropping the image if necessary */
+            display: block; /* 인라인 동작 제거 */
+            width: 100%; /* 컨테이너 너비에 맞게 이미지 조절 */
+            object-fit: cover; /* 필요에 따라 이미지 자르기 */
         }
 
         body.dark .project-card img {
-            filter: brightness(80%); /* Adjust brightness to 80% */
+            filter: brightness(80%); /* 다크 모드에서 밝기 조절 */
         }
 
-        /* Style for the text content container */
+        /* 카드 내 텍스트 컨텐츠 스타일 */
         .project-card .content {
-            padding: 16px; /* Add some padding around the text */
-            text-align: left; /* Align text to the left */
+            padding: 16px; /* 텍스트 주변 여백 추가 */
+            text-align: left; /* 텍스트 왼쪽 정렬 */
         }
 
-        /* Add a transition for smooth alignment change */
-        .project-card {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        /* Highlight the container when hovered to emphasize the change */
+        /* 호버 시 카드 강조 효과 */
         .project-card:hover {
-            transform: scale(1.05);
-            border: 2px solid #00C49A; /* Change border color to something noticeable */
+            transform: scale(1.05); /* 카드 확대 */
+            border: 2px solid #00C49A; /* 테두리 색상 변경 */
         }
     </style>
 </head>
@@ -91,7 +91,7 @@
 <!-- 프로젝트 갤러리 -->
 <div class="container mx-auto p-4 project-gallery">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- 프로젝트 카드 -->
+        <!-- 프로젝트 데이터 로드 및 표시를 위한 자바스크립트 -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 fetch('projects.json')
