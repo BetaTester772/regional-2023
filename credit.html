@@ -42,8 +42,19 @@
             padding: 20px;
             border: 1px solid #e2e2e2;
             border-radius: 8px;
-            width: 500px; /* 컨테이너 너비 지정 */
+            width: 450px; /* 컨테이너 너비 지정 */
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Example shadow */
+        }
+
+        /* Add a transition for smooth alignment change */
+        .credit-container {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Highlight the container when hovered to emphasize the change */
+        .credit-container:hover {
+            transform: scale(1.05);
+            border: 2px solid #00C49A; /* Change border color to something noticeable */
         }
 
         .profile-img {
