@@ -84,6 +84,17 @@
             border: 2px solid #f3f4f6;
         }
 
+        .github-badge-container img:hover {
+            opacity: 0.8; /* Slightly lowers opacity on hover */
+            border: 2px solid #333;
+            box-shadow: 0 0 10px #333; /* Adds a shadow for a 3D lifting effect */
+            cursor: pointer; /* Changes cursor to indicate clickable item */
+        }
+
+        body.dark .github-badge-container img:hover {
+            box-shadow: 0 0 15px #fff; /* Brighter shadow for visibility on dark backgrounds */
+        }
+
         body.dark .badge-container img {
             border: 2px solid white;
         }
