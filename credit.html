@@ -136,7 +136,19 @@
             filter: brightness(80%);
         }
 
+        @media (max-width: 600px) {
+            .credit-container {
+                width: 300px; /* or any other suitable size */
+                /* You can also adjust other properties like padding, margin, etc., as needed */
+            }
 
+            .badge-container {
+                display: flex;
+                flex-direction: column; /* This stacks the items vertically */
+                align-items: center; /* Aligns items horizontally in the center */
+                gap: 2px; /* Adds space between badges */
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100">
