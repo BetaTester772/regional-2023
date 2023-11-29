@@ -43,6 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (logo) {
             logo.src = './assets/has_logo_gray.svg'; // Dark 모드 이미지 경로로 변경
         }
+
+        const mainLogo = document.querySelector('.main-logo');
+        if (mainLogo) {
+            mainLogo.src = './assets/regional-2023-logo_white.svg'
+        }
     }
 
     // Dark mode disable function
@@ -55,6 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const logo = document.querySelector('.logo');
         if (logo) {
             logo.src = './assets/has_logo_white.svg'; // Light 모드 이미지 경로로 변경
+        }
+
+        const mainLogo = document.querySelector('.main-logo');
+        if (mainLogo) {
+            console.log('found main logo')
+            mainLogo.src = './assets/regional-2023-logo_black.svg'
         }
     }
 
